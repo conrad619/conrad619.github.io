@@ -38,10 +38,19 @@ time, mark, audio, video {
   font-family: 'Poppins';  
   src:url('../fonts/Poppins-Regular.otf');
 }
+@font-face{
+  font-family: 'Montserrat';  
+  src:url('../fonts/Montserrat-Regular.otf');
+}
+
+@font-face{
+  font-family: 'Montserrat-bold';  
+  src:url('../fonts/Montserrat-Bold.otf');
+}
 body{
   font-family: 'Opensans';
   background: #031624;
-  color:red;
+  color:#ffffff;
   font-size: 12px;  
   background-image:url('../images/header_bg.jpg'),url('../images/stars_repeat.png');
   background-repeat: no-repeat, repeat;
@@ -67,6 +76,7 @@ hr.hr-full{
   float:left;
   width: 100%;
   border-bottom: 1px solid #114764;
+  margin-top: -1px;
 }
 hr.hr-short{
   margin:30px auto 50px auto;
@@ -85,6 +95,8 @@ hr.hr-short{
   color:#333333;
   border-radius: 5px;
   display: inline-block;
+  font-weight: 600;
+  border:0;
 }
 .button-yellow:hover{
   text-decoration: none;
@@ -114,6 +126,7 @@ nav ul li a,
   color:#ffffff;
   height: 45px;
   line-height: 45px;
+  font-family: 'Montserrat';
 }
 nav ul li a:hover,
 #login:hover{
@@ -171,7 +184,6 @@ nav ul li a:hover,
   margin-bottom: 30px;
 }
 #signup-form input[type="submit"]{
-  border:0;
   margin: 0 auto;
   display: block;
 }
@@ -191,6 +203,9 @@ nav ul li a:hover,
 #quick-introduction{
   margin-bottom: 82px;
 }
+#quick-introduction img{
+  width: 100%;
+}
 #how-works{
   padding-bottom: 82px;
 }
@@ -201,7 +216,11 @@ nav ul li a:hover,
   width: 136px;
   margin:13px auto 0;
 }
+#ux-analytics{
+  padding-bottom: 77px;
+}
 #ux-analytics h2{
+  margin-top:54px;
   text-align: left;
   margin-bottom: 14px;
 }
@@ -212,6 +231,9 @@ nav ul li a:hover,
   max-width: 300px;
   width: 100%;
 }
+#ux-analytics .row:nth-of-type(2) .side {
+  margin-left: 10px;
+}
 #ux-analytics .row > div{
   padding:0;
 }
@@ -220,4 +242,101 @@ nav ul li a:hover,
 }
 #ux-analytics img{
   margin:0 -25px;
+}
+#reviews{
+  margin-bottom: 314px;
+}
+#reviews > .row > div{
+  padding: 0 5px;
+}
+#reviews > .row > div > div{
+  border:1px solid #ffffff;
+  padding: 27px 12px 0px;
+  height: 280px;
+}
+#reviews .quote{
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin-bottom: 37px;
+}
+#reviews .stars{
+  text-align: center;
+  margin-bottom: 50px;
+}
+#reviews .author_name,
+#reviews .author_role{
+  display:block;
+  margin-left: 8px;  
+}
+#reviews .author_name{
+  font-family: 'Opensans-bold';
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+}
+#reviews .author_role{
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+#reviews .author img{
+  float:left;
+  margin-right: 8px;
+}
+#footer{
+  text-align: center;
+  background: #ffffff;
+  padding:0;
+}
+#footer-form-box img{
+  margin-top:-214px;
+}
+#footer-form{
+  background: #ffffff;
+  margin-top:-42px;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+#footer-form p{
+  font-family: 'Poppins';
+  font-size: 14px;
+  color:#6c6c6c;
+  margin-bottom: 28px;
+}
+#footer-form input:not([type="submit"]){
+  font-family: 'Poppins';
+  font-size: 14px;
+  color:#6c6c6c;
+  padding: 10px 20px;
+  margin-right: 12px;
+}
+#footer-form input[type="submit"]{
+  border:0;
+}
+#footer .hr-full{
+  border-bottom:1px solid #b7b7b7;
+}
+#footer-nav{
+  background: #ffffff;
+}
+#footer-nav .row{
+  width: 100%;
+}
+#footer-nav{
+  padding-top:28px;
+  padding-bottom: 50px;  
+  padding-left: 50px;
+}
+#footer-nav ul li{
+  text-align: left;
+  margin-bottom: 15px;
+}
+#footer-nav ul li.title{
+  font-family: 'Montserrat-bold';
+  font-size: 14px;
+  color:#666666;
+}
+#footer-nav ul li a{
+  font-family: 'Montserrat';
+  font-size: 11px;
+  color:#666666;
 }
