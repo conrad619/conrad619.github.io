@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family:'Opensans';
+  src:url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+  font-family:'Opensans-bold';
+  src:url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+  font-family:'Opensans-light';
+  src:url('../fonts/OpenSans-Light.ttf');
+}
+@font-face{
+  font-family: 'Poppins';  
+  src:url('../fonts/Poppins-Regular.otf');
+}
+body{
+  font-family: 'Opensans';
+  background: #031624;
+  color:red;
+  font-size: 12px;  
+  background-image:url('../images/header_bg.jpg'),url('../images/stars_repeat.png');
+  background-repeat: no-repeat, repeat;
+  background-position: top center;
+  background-size: contain;
+}
+ul{
+  list-style: none;
+}
+h1{
+  font-size: 27px;
+  font-family: 'Opensans-bold';
+  text-align: center;
+}
+h2{
+  font-size: 20px;
+  font-family: 'Opensans-bold';
+  text-align: center;
+}
+hr.hr-full{
+  margin:0;
+  padding: 0;
+  float:left;
+  width: 100%;
+  border-bottom: 1px solid #114764;
+}
+hr.hr-short{
+  margin:30px auto 50px auto;
+  padding: 0;
+  border-bottom: 1px solid #fff568;
+  width: 60px;
+}
+.container{
+  max-width:760px;
+  margin:0 auto;
+  padding:0 15px;
+}
+.button-yellow{
+  padding:14px 25px;
+  background:#fff568;
+  color:#333333;
+  border-radius: 5px;
+  display: inline-block;
+}
+.button-yellow:hover{
+  text-decoration: none;
+  color: #000000;
+}
+#nav{
+  padding:30px 0;
+}
+#nav .nav-wrap > *{
+  display: inline-block;
+  float: left;  
+  font-size: 12px;
+}
+nav ul{
+  margin-right: 40px;
+}
+nav ul li{
+  float:left;
+  margin-right: 15px;
+}
+nav ul li:last-child{
+  margin-right: 0;
+}
+nav ul li a,
+#login{
+  text-decoration: none;
+  color:#ffffff;
+  height: 45px;
+  line-height: 45px;
+}
+nav ul li a:hover,
+#login:hover{
+  text-decoration: none;
+  color: #fff568;
+}
+#login{
+  margin-right: 13px;
+}
+#mobile-testing{
+  padding-bottom: 366px;
+  padding-top: 81px;
+}
+#mobile-testing .wrap{
+  max-width: 415px;
+}
+#mobile-testing h1{
+  margin-bottom: 15px;
+  text-align: left;
+}
+#mobile-testing p{
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin-bottom: 37px;
+}
+#trusted-partners ul{
+  display:flex;
+  justify-content: space-between;
+}
+#trusted-partners{
+  margin-bottom: 88px;
+}
+#startup{  
+  padding-bottom: 75px;
+}
+#startup .row > div{
+  padding:0;
+}
+#signup-form{
+  max-width: 368px;
+  width: 100%;
+}
+#signup-form input:not([type="submit"]){
+  display: block !important;
+  font-family: 'Poppins';
+  font-size: 14px;
+  padding: 20px;
+  background: none;
+  border:1px solid #b7b7b7;
+  width: 100%;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+#signup-form input[type="password"]{
+  margin-bottom: 30px;
+}
+#signup-form input[type="submit"]{
+  border:0;
+  margin: 0 auto;
+  display: block;
+}
+#signup-form input::placeholder{
+  color:#b7b7b7;
+}
+#features{
+  padding-bottom: 85px;
+}
+#featureList div{
+  text-align: center;
+}
+#featureList h2{
+  margin-top:20px;
+  margin-bottom: 15px; 
+}
+#quick-introduction{
+  margin-bottom: 82px;
+}
+#how-works{
+  padding-bottom: 82px;
+}
+#howList div{
+  text-align: center;
+}
+#howList p{
+  width: 136px;
+  margin:13px auto 0;
+}
+#ux-analytics h2{
+  text-align: left;
+  margin-bottom: 14px;
+}
+#ux-analytics p{
+  margin-bottom: 27px;
+}
+#ux-analytics .side{
+  max-width: 300px;
+  width: 100%;
+}
+#ux-analytics .row > div{
+  padding:0;
+}
+#ux-analytics .row:nth-of-type(2){
+  flex-direction: row-reverse;
+}
+#ux-analytics img{
+  margin:0 -25px;
+}
