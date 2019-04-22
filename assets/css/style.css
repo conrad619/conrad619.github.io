@@ -261,7 +261,12 @@ nav ul li a:hover,
 }
 #reviews .stars{
   text-align: center;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+}
+#reviews .author{
+  position: absolute;
+  width: 100%;
+  bottom: 27px;
 }
 #reviews .author_name,
 #reviews .author_role{
