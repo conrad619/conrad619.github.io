@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,330 +86,367 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-@font-face{
-  font-family:'Opensans';
-  src:url('../fonts/OpenSans-Regular.ttf');
+@font-face {
+  font-family: "Opensans";
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
-@font-face{
-  font-family:'Opensans-bold';
-  src:url('../fonts/OpenSans-Bold.ttf');
+@font-face {
+  font-family: "Opensans-bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
 }
-@font-face{
-  font-family:'Opensans-light';
-  src:url('../fonts/OpenSans-Light.ttf');
+@font-face {
+  font-family: "Opensans-light";
+  src: url("../fonts/OpenSans-Light.ttf");
 }
-@font-face{
-  font-family: 'Poppins';  
-  src:url('../fonts/Poppins-Regular.otf');
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.otf");
 }
-@font-face{
-  font-family: 'Montserrat';  
-  src:url('../fonts/Montserrat-Regular.otf');
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
 }
 
-@font-face{
-  font-family: 'Montserrat-bold';  
-  src:url('../fonts/Montserrat-Bold.otf');
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.otf");
 }
-body{
-  font-family: 'Opensans';
+body {
+  font-family: "Opensans";
   background: #031624;
-  color:#ffffff;
-  font-size: 12px;  
-  background-image:url('../images/header_bg.jpg'),url('../images/stars_repeat.png');
+  color: #ffffff;
+  font-size: 12px;
+  background-image: url("../images/header_bg.jpg"),
+    url("../images/stars_repeat.png");
   background-repeat: no-repeat, repeat;
   background-position: top center;
   background-size: contain;
 }
-ul{
+ul {
   list-style: none;
 }
-h1{
+h1 {
   font-size: 27px;
-  font-family: 'Opensans-bold';
+  font-family: "Opensans-bold";
   text-align: center;
 }
-h2{
+h2 {
   font-size: 20px;
-  font-family: 'Opensans-bold';
+  font-family: "Opensans-bold";
   text-align: center;
 }
-hr.hr-full{
-  margin:0;
+hr.hr-full {
+  margin: 0;
   padding: 0;
-  float:left;
+  float: left;
   width: 100%;
   border-bottom: 1px solid #114764;
   margin-top: -1px;
 }
-hr.hr-short{
-  margin:30px auto 50px auto;
+hr.hr-short {
+  margin: 30px auto 50px auto;
   padding: 0;
   border-bottom: 1px solid #fff568;
   width: 60px;
 }
-.container{
-  max-width:760px;
-  margin:0 auto;
-  padding:0 15px;
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.button-yellow{
-  padding:14px 25px;
-  background:#fff568;
-  color:#333333;
+.button-yellow {
+  padding: 14px 25px;
+  background: #fff568;
+  color: #333333;
   border-radius: 5px;
   display: inline-block;
   font-weight: 600;
-  border:0;
+  border: 0;
 }
-.button-yellow:hover{
+.button-yellow:hover {
   text-decoration: none;
   color: #000000;
 }
-#nav{
-  padding:30px 0;
+#nav {
+  padding: 30px 0;
 }
-#nav .nav-wrap > *{
+#nav .nav-wrap > * {
   display: inline-block;
-  float: left;  
+  float: left;
   font-size: 12px;
 }
-nav ul{
+nav ul {
   margin-right: 40px;
 }
-nav ul li{
-  float:left;
+nav ul li {
+  float: left;
   margin-right: 15px;
 }
-nav ul li:last-child{
+nav ul li:last-child {
   margin-right: 0;
 }
 nav ul li a,
-#login{
+#login {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
   height: 45px;
   line-height: 45px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 nav ul li a:hover,
-#login:hover{
+#login:hover {
   text-decoration: none;
   color: #fff568;
 }
-#login{
+#login {
   margin-right: 13px;
 }
-#mobile-testing{
+#mobile-testing {
   padding-bottom: 366px;
   padding-top: 81px;
 }
-#mobile-testing .wrap{
+#mobile-testing .wrap {
   max-width: 415px;
 }
-#mobile-testing h1{
+#mobile-testing h1 {
   margin-bottom: 15px;
   text-align: left;
 }
-#mobile-testing p{
-  font-family: 'Poppins';
+#mobile-testing p {
+  font-family: "Poppins";
   font-size: 14px;
   margin-bottom: 37px;
 }
-#trusted-partners ul{
-  display:flex;
+#trusted-partners ul {
+  display: flex;
   justify-content: space-between;
 }
-#trusted-partners{
+#trusted-partners {
   margin-bottom: 88px;
 }
-#startup{  
+#startup {
   padding-bottom: 75px;
 }
-#startup .row > div{
-  padding:0;
+#startup .row > div {
+  padding: 0;
 }
-#signup-form{
+#signup-form {
   max-width: 368px;
   width: 100%;
 }
-#signup-form input:not([type="submit"]){
+#signup-form input:not([type="submit"]) {
   display: block !important;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 14px;
   padding: 20px;
   background: none;
-  border:1px solid #b7b7b7;
+  border: 1px solid #b7b7b7;
   width: 100%;
   margin-bottom: 20px;
-  color:#ffffff;
+  color: #ffffff;
 }
-#signup-form input[type="password"]{
+#signup-form input[type="password"] {
   margin-bottom: 30px;
 }
-#signup-form input[type="submit"]{
+#signup-form input[type="submit"] {
   margin: 0 auto;
   display: block;
 }
-#signup-form input::placeholder{
-  color:#b7b7b7;
+#signup-form input::placeholder {
+  color: #b7b7b7;
 }
-#features{
+#features {
   padding-bottom: 85px;
 }
-#featureList div{
+#featureList div {
   text-align: center;
 }
-#featureList h2{
-  margin-top:20px;
-  margin-bottom: 15px; 
+#featureList h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
-#quick-introduction{
+#quick-introduction {
   margin-bottom: 82px;
 }
-#quick-introduction img{
+#quick-introduction img {
   width: 100%;
 }
-#how-works{
+#how-works {
   padding-bottom: 82px;
 }
-#howList div{
+#howList div {
   text-align: center;
 }
-#howList p{
+#howList p {
   width: 136px;
-  margin:13px auto 0;
+  margin: 13px auto 0;
 }
-#ux-analytics{
+#ux-analytics {
   padding-bottom: 77px;
 }
-#ux-analytics h2{
-  margin-top:54px;
+#ux-analytics h2 {
+  margin-top: 54px;
   text-align: left;
   margin-bottom: 14px;
 }
-#ux-analytics p{
+#ux-analytics p {
   margin-bottom: 27px;
 }
-#ux-analytics .side{
+#ux-analytics .side {
   max-width: 300px;
   width: 100%;
 }
 #ux-analytics .row:nth-of-type(2) .side {
   margin-left: 10px;
 }
-#ux-analytics .row > div{
-  padding:0;
+#ux-analytics .row > div {
+  padding: 0;
 }
-#ux-analytics .row:nth-of-type(2){
+#ux-analytics .row:nth-of-type(2) {
   flex-direction: row-reverse;
 }
-#ux-analytics img{
-  margin:0 -25px;
+#ux-analytics img {
+  margin: 0 -25px;
 }
-#reviews{
+#reviews {
   margin-bottom: 314px;
 }
-#reviews > .row > div{
+#reviews > .row > div {
   padding: 0 5px;
 }
-#reviews > .row > div > div{
-  border:1px solid #ffffff;
-  padding: 27px 12px 0px;
-  height: 280px;
+#reviews > .row > div > div {
+  border: 1px solid #ffffff;
+  padding: 27px 12px 25px;
+  /* height: 280px; */
 }
-#reviews .quote{
-  font-family: 'Poppins';
+#reviews .quote {
+  font-family: "Poppins";
   font-size: 14px;
   margin-bottom: 37px;
 }
-#reviews .stars{
+#reviews .stars {
   text-align: center;
   /*margin-bottom: 50px;*/
 }
-#reviews .author{
-  position: absolute;
+#reviews .author {
+  position: relative;
   width: 100%;
-  bottom: 27px;
+  bottom: 0;
 }
 #reviews .author_name,
-#reviews .author_role{
-  display:block;
-  margin-left: 8px;  
+#reviews .author_role {
+  display: block;
+  margin-left: 8px;
 }
-#reviews .author_name{
-  font-family: 'Opensans-bold';
+#reviews .author_name {
+  font-family: "Opensans-bold";
   font-size: 16px;
   text-align: left;
   margin-top: 10px;
 }
-#reviews .author_role{
-  font-family: 'Poppins';
+#reviews .author_role {
+  font-family: "Poppins";
   font-size: 14px;
 }
-#reviews .author img{
-  float:left;
+#reviews .author img {
+  float: left;
   margin-right: 8px;
 }
-#footer{
+#footer {
   text-align: center;
   background: #ffffff;
-  padding:0;
+  padding: 0;
 }
-#footer-form-box img{
-  margin-top:-214px;
+#footer-form-box img {
+  margin-top: -214px;
 }
-#footer-form{
+#footer-form {
   background: #ffffff;
-  margin-top:-42px;
-  padding-top:50px;
+  margin-top: -42px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
-#footer-form p{
-  font-family: 'Poppins';
+#footer-form p {
+  font-family: "Poppins";
   font-size: 14px;
-  color:#6c6c6c;
+  color: #6c6c6c;
   margin-bottom: 28px;
 }
-#footer-form input:not([type="submit"]){
-  font-family: 'Poppins';
+#footer-form input:not([type="submit"]) {
+  font-family: "Poppins";
   font-size: 14px;
-  color:#6c6c6c;
+  color: #6c6c6c;
   padding: 10px 20px;
   margin-right: 12px;
 }
-#footer-form input[type="submit"]{
-  border:0;
+#footer-form input[type="submit"] {
+  border: 0;
 }
-#footer .hr-full{
-  border-bottom:1px solid #b7b7b7;
+#footer .hr-full {
+  border-bottom: 1px solid #b7b7b7;
 }
-#footer-nav{
+#footer-nav {
   background: #ffffff;
 }
-#footer-nav .row{
+#footer-nav .row {
   width: 100%;
 }
-#footer-nav{
-  padding-top:28px;
-  padding-bottom: 50px;  
+#footer-nav {
+  padding-top: 28px;
+  padding-bottom: 50px;
   padding-left: 50px;
 }
-#footer-nav ul li{
+#footer-nav ul li {
   text-align: left;
   margin-bottom: 15px;
 }
-#footer-nav ul li.title{
-  font-family: 'Montserrat-bold';
+#footer-nav ul li.title {
+  font-family: "Montserrat-bold";
   font-size: 14px;
-  color:#666666;
+  color: #666666;
 }
-#footer-nav ul li a{
-  font-family: 'Montserrat';
+#footer-nav ul li a {
+  font-family: "Montserrat";
   font-size: 11px;
-  color:#666666;
+  color: #666666;
+}
+@media (max-width: 920px) {
+  #signup-form {
+    max-width: 100%;
+    padding: 0 1em;
+  }
+  #footer-form-box img {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -92%);
+  }
+  body {
+    background-size: auto;
+  }
+  .side,
+  .side * {
+    text-align: center !important;
+  }
+  .side {
+    margin: 0 auto !important;
+    margin-bottom: 2em !important;
+  }
+  #ux-analytics h2 {
+    margin-top: 1em;
+  }
+  #ux-analytics .row {
+    flex-direction: column-reverse !important;
+  }
+  #ux-analytics .img-fluid {
+    margin: 0 auto;
+  }
+  #ux-analytics .row > div {
+    text-align: center;
+  }
 }
